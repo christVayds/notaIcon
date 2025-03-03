@@ -112,7 +112,7 @@ a:hover{
     margin-bottom: 10px;
 }
 
-#install{
+.install{
     padding: 5px;
     font-size: 1rem;
     font-family: "Liter", serif;
@@ -121,7 +121,7 @@ a:hover{
     display: none;
 }
 
-#install:hover{
+.install:hover{
     color: var(---active);
     cursor: pointer;
 }
@@ -155,7 +155,7 @@ a:hover{
     font-size: 1.5rem;
 }
 
-.menus nav #install{
+.menus nav .install{
     font-size: 1.5rem;
 }
 
