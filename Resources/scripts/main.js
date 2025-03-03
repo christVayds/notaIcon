@@ -5,30 +5,30 @@ if("serviceWorker" in navigator){
     .catch((err) => console.log('service worker failed', err))
 }
 
-// let deferredPrompt;
+let deferredPrompt;
 
-// window.addEventListener("beforeinstallprompt", event =>{
-//     event.preventDefault();
-//     deferredPrompt = event;
+window.addEventListener("beforeinstallprompt", event =>{
+    event.preventDefault();
+    deferredPrompt = event;
 
-//     // const additionalAction = document.getElementById('additional-actions');
-//     // const installButton = document.createElement('button');
-//     // installButton.textContent = 'Install App';
-//     // installButton.classList = 'install';
+    // const additionalAction = document.getElementById('additional-actions');
+    // const installButton = document.createElement('button');
+    // installButton.textContent = 'Install App';
+    // installButton.classList = 'install';
 
-//     const installButton = document.getElementById('install');
-//     installButton.style.display = 'block';
+    const installButton = document.getElementById('install');
+    installButton.style.display = 'block';
 
-//     installButton.addEventListener('click', () => {
-//         deferredPrompt.prompt();
-//         deferredPrompt.userChoice.then(choice => {
-//             if(choice.outcome === 'accepted'){
-//                 console.log("user installed the pwa");
-//             }
-//             deferredPrompt = null;
-//         });
-//     });
-// });
+    installButton.addEventListener('click', () => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(choice => {
+            if(choice.outcome === 'accepted'){
+                console.log("user installed the pwa");
+            }
+            deferredPrompt = null;
+        });
+    });
+});
 
 $(document).ready(function(){
     $('#open-menu').click(function(){
