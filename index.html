@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/styles/main.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- <link rel="icon" type="image/x-icon" href="Resources/assets/icon.ico"> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9515269a08.js" crossorigin="anonymous"></script>
+    <title>Notes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mobile-menu" id="display_menu">
+            <div class="top" id="exit_menu">Exit</div>
+            <div class="menus">
+                <div class="profile"></div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Notes</a>
+                    <a href="#">Settings</a>
+                    <button id="install">Install</button>
+                </nav>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-side logo">
+                <h2>Notes App</h2>
+            </div>
+            <div class="header-side nav desktop">
+                <a href="#">Home</a>
+                <a href="#">Notes</a>
+                <a href="#">Settings</a>
+                <button id="install">Install</button>
+            </div>
+            <div class="header-side nav mobile" id="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-side list"></div>
+            <div class="content-side profile"></div>
+        </div>
+    </div>
+
+    <script src="Resources/scripts/main.js"></script>
+</body>
+</html>
