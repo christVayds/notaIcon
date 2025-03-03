@@ -118,6 +118,7 @@ a:hover{
     font-family: "Liter", serif;
     border: none;
     background-color: transparent;
+    display: none;
 }
 
 #install:hover{
