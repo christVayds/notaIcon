@@ -145,7 +145,7 @@ a:hover{
     margin: 5px;
     width: 100%;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
