@@ -57,4 +57,16 @@ $(document).ready(function(){
         });
         openMenu = !openMenu;
     })
+
+    $('.viewContent').click(function(){
+        var contentViewer = document.getElementById('content-viewer');
+
+        contentViewer.style.top = '50%';
+    })
+
+    $('#exitViewer').click(function(){
+        var contentViewer = document.getElementById('content-viewer');
+
+        contentViewer.style.top = '150%';
+    });
 });
