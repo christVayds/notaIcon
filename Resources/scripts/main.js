@@ -67,9 +67,13 @@ $(document).ready(function(){
 
         allItems.forEach(element => {
             if(openMenu){
+                document.querySelector("meta[name=msapplication-navbutton-color]").setAttribute('content', '#e4e4e4');
+                document.querySelector("meta[name=theme-color]").setAttribute('content', '#e4e4e4');
                 element.style.display = 'none';
                 exiter.style.display = 'none';
             } else {
+                document.querySelector("meta[name=msapplication-navbutton-color]").setAttribute('content', '#16161656');
+                document.querySelector("meta[name=theme-color]").setAttribute('content', '#16161656');
                 element.style.display = 'flex';
                 exiter.style.display = 'block';
             }
