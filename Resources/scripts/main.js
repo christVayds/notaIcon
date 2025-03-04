@@ -45,14 +45,33 @@ $(document).ready(function(){
         menu.style.left = '101%';
     });
 
-    $('#addNewItem').click(function(){
+    $('#composer-exiter').click(function(){
         var allItems = document.querySelectorAll('.new-item');
+        var exiter = document.getElementById('composer-exiter');
 
         allItems.forEach(element => {
             if(openMenu){
                 element.style.display = 'none';
+                exiter.style.display = 'none';
             } else {
                 element.style.display = 'flex';
+                exiter.style.display = 'block';
+            }
+        });
+        openMenu = !openMenu;
+    });
+
+    $('#addNewItem').click(function(){
+        var allItems = document.querySelectorAll('.new-item');
+        var exiter = document.getElementById('composer-exiter');
+
+        allItems.forEach(element => {
+            if(openMenu){
+                element.style.display = 'none';
+                exiter.style.display = 'none';
+            } else {
+                element.style.display = 'flex';
+                exiter.style.display = 'block';
             }
         });
         openMenu = !openMenu;
