@@ -338,7 +338,7 @@ button:hover:not(.install){
     background-color: var(---dark);
     color: var(---white);
     border-radius: 10px;
-    top: 150%;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
