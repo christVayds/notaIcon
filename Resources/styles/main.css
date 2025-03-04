@@ -55,6 +55,7 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(---white);
 }
 
 .header-nav .header-side{
@@ -102,7 +103,7 @@ a:hover{
 
 .composer{
     /* border: 1px solid var(---green); */
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     margin: 10px;
@@ -164,6 +165,7 @@ a:hover{
 
 .profile{
     width: 30%;
+    height: fit-content;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -171,6 +173,7 @@ a:hover{
 
     display: flex;
     flex-direction: column;
+    position: sticky;
 }
 
 .profile .profile-header{
@@ -242,6 +245,22 @@ a:hover{
     cursor: pointer;
 }
 
+button:not(.install){
+    width: 100px;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(---dark);
+    color: var(---white);
+    margin: 5px;
+    font-family: "Liter", serif;
+}
+
+button:hover:not(.install){
+    background-color: var(---active);
+}
+
 .mobile-menu{
     position: fixed;
     width: 100%;
@@ -273,6 +292,30 @@ a:hover{
 
 .menus nav .install{
     font-size: 1.5rem;
+}
+
+.note{
+    border: 1px solid var(---grey);
+    background-color: #ffff;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.note .title{
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.note p{
+    color: var(---active);
+}
+
+.note .value{
+    color: var(---red);
 }
 
 /* Extra small devices (phones, 600px and down) */
