@@ -237,6 +237,13 @@ a:hover{
     color: var(---active);
 }
 
+.display-task .check-task{
+    border: 1px solid var(---dark);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
 .install{
     padding: 5px;
     font-size: 1rem;
