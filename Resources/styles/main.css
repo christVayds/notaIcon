@@ -101,7 +101,7 @@ a:hover{
 } */
 
 .composer{
-    border: 1px solid var(---green);
+    /* border: 1px solid var(---green); */
     position: absolute;
     right: 0;
     bottom: 0;
