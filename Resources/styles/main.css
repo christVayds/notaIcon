@@ -211,6 +211,11 @@ a:hover{
     color: var(---dark);
 }
 
+.profile-dashboard .dashboard-date{
+    color: var(---dark);
+    font-size: 1.5rem;
+}
+
 .display-task{
     /* border: 1px solid var(---dark); */
     border-radius: 10px;
@@ -273,11 +278,10 @@ button:hover:not(.install){
 }
 
 .mobile-menu .top{
-    border: 1px solid var(---green);
+    /* border: 1px solid var(---green); */
     font-size: 2rem;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     text-align: right;
     font-weight: bold;
 }
