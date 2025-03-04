@@ -60,12 +60,14 @@ $(document).ready(function(){
 
     $('.viewContent').click(function(){
         var contentViewer = document.getElementById('content-viewer');
+        document.querySelector("meta[name=msapplication-navbutton-color]").setAttribute('content', '#161616');
 
         contentViewer.style.top = '50%';
     })
 
     $('#exitViewer').click(function(){
         var contentViewer = document.getElementById('content-viewer');
+        document.querySelector("meta[name=msapplication-navbutton-color]").setAttribute('content', '#e4e4e4');
 
         contentViewer.style.top = '150%';
     });
