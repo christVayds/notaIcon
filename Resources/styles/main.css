@@ -231,7 +231,6 @@ a:hover{
     align-items: center;
     font-size: 1.2rem;
     cursor: pointer;
-    flex-direction: column;
 }
 
 .task:hover{
