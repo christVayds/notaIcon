@@ -96,12 +96,14 @@ a:hover{
     padding: 10px;
 }
 
-.content-side{
+/* .content-side{
     border: 1px solid var(---green);
-}
+} */
 
 .content-side.list{
     width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .profile{
@@ -149,6 +151,21 @@ a:hover{
     color: var(---dark);
 }
 
+.display-task{
+    /* border: 1px solid var(---dark); */
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 250px;
+    padding: 10px;
+}
+
+.task{
+    /* border: 1px solid var(---dark); */
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
 .install{
     padding: 5px;
     font-size: 1rem;
@@ -170,7 +187,7 @@ a:hover{
     left: 101%;
     background-color: var(---white);
     display: none;
-    transition: left .5s ease-out;
+    transition: left .5s ease-in-out;
 }
 
 .mobile-menu .top{
