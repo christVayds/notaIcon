@@ -97,6 +97,10 @@ a:hover{
     padding: 10px;
 }
 
+.header-nav .header-side.logo img{
+    width: 150px;
+}
+
 .content{
     /* border: 1px solid var(---red); */
     min-height: 250px;

@@ -13,8 +13,13 @@
             "type": "image/ico"
         },
         {
-            "src": "Resources/assets/supermanlogo.png",
-            "sizes": "474x474",
+            "src": "Resources/assets/notaicon_logo_large.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        },
+        {
+            "src": "Resources/assets/notaicon_logo.ico",
+            "sizes": "32x32",
             "type": "image/png"
         }
     ]
