@@ -31,6 +31,8 @@ window.addEventListener("beforeinstallprompt", event =>{
 });
 
 $(document).ready(function(){
+    var openMenu = false;
+
     $('#open-menu').click(function(){
         var menu = document.getElementById('display_menu');
 
@@ -42,4 +44,17 @@ $(document).ready(function(){
 
         menu.style.left = '101%';
     });
+
+    $('#addNewItem').click(function(){
+        var allItems = document.querySelectorAll('.new-item');
+
+        allItems.forEach(element => {
+            if(openMenu){
+                element.style.display = 'none';
+            } else {
+                element.style.display = 'flex';
+            }
+        });
+        openMenu = !openMenu;
+    })
 });
