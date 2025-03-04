@@ -89,7 +89,7 @@ a:hover{
 }
 
 .content{
-    border: 1px solid var(---red);
+    /* border: 1px solid var(---red); */
     min-height: 250px;
     display: flex;
     justify-content: center;
@@ -110,6 +110,43 @@ a:hover{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile-header{
+    /* border: 1px solid var(---green); */
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.profile-header img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-header .userInfo{
+    /* border: 1px solid var(---green); */
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+.profile .profile-dashboard{
+    /* border: 1px solid var(---red); */
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(---active);
+}
+
+.profile-dashboard .value{
+    color: var(---dark);
 }
 
 .install{
@@ -137,8 +174,8 @@ a:hover{
 }
 
 .mobile-menu .top{
-    border: 1px solid var(---green);
-    font-size: 1.2rem;
+    /* border: 1px solid var(---green); */
+    font-size: 1.5rem;
     width: 100%;
     padding: 10px;
     text-align: right;
